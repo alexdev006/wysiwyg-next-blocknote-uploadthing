@@ -20,7 +20,7 @@ export default function Home() {
   };
   return (
     <main className="min-h-screen">
-      <Cover url={coverUrl} />
+      <Cover url={coverUrl} setUrl={setCoverUrl} />
       <div className="flex flex-col px-24 py-10 w-full">
         <div className="group flex flex-col gap-2">
           {!coverUrl && (
@@ -29,7 +29,7 @@ export default function Home() {
                 className="hover:bg-neutral-100 text-neutral-400 rounded-md px-3 py-1 transition-colors"
                 onClick={enableCover}
               >
-                📷 Add cover
+                📷 Add random cover
               </button>
             </div>
           )}
